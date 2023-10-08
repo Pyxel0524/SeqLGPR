@@ -53,10 +53,10 @@ def evaluate(net, loader,mode):
         for iteration,(temp, search, label) in enumerate(loader):
             temp, search, label = temp.to(device),search.to(device),label.to(device)
             B, C, H, W = temp.shape
-            # 输入网络
+            # input
             match_map = net(temp, search)
             
-            #计算loss
+            # calculating loss
             loss = 0
             loss = criterion(match_map, label)
         
@@ -97,16 +97,16 @@ def train(net,
         for iteration,(temp, search, label) in enumerate(train_loader):
             temp, search, label = temp.to(device),search.to(device),label.to(device)
             B, C, H, W = temp.shape
-            # 输入网络
+            # input
             match_map = model(temp, search)
             
-            #计算loss
+            # calculating loss
             optimizer.zero_grad()
             loss = 0
             loss = criterion(match_map, label)
             loss.backward()
             optimizer.step()
-            # 更新学习率
+            # update learning rate
             scheduler.step()
 
             if iteration % 5 == 0:
