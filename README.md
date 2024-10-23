@@ -1,7 +1,7 @@
 # Looking Beneath More: A Sequence-based Localizing Ground Penetrating Radar Framework
 
 Implementation of SeqLGPR in Python, including code for training the model on the GROUNDED dataset.
-[![](cover.png)]
+![](cover.png)
 
 ## Data
 
