@@ -1,19 +1,16 @@
 # Looking Beneath More: A Sequence-based Localizing Ground Penetrating Radar Framework
 
 Implementation of SeqLGPR in Python, including code for training the model on the GROUNDED dataset.
-[![](imgs/video-preview.png)]
+[![](cover.png)]
 
 ## Data
 
-Running this code requires a copy of the Pittsburgh 250k (available [here](https://github.com/Relja/netvlad/issues/42)), 
-and the dataset specifications for the Pittsburgh dataset (available [here](https://www.di.ens.fr/willow/research/netvlad/data/netvlad_v100_datasets.tar.gz)).
-`pittsburgh.py` contains a hardcoded path to a directory, where the code expects directories `000` to `010` with the various Pittsburth database images, a directory
-`queries_real` with subdirectories `000` to `010` with the query images, and a directory `datasets` with the dataset specifications (.mat files).
+Running this code requires a copy of the GROUNDED dataset (Ort T, Gilitschenski I, Rus D. GROUNDED: A localizing ground penetrating radar evaluation dataset for learning to localize in inclement weather[J]. The International Journal of Robotics Research, 2023, 42(10): 901-916.)
 
 
 # Usage
 
-`demo.py` contains the majority of the code, and has three different modes (`train`, `test`, `cluster`) which we'll discuss in mode detail below.
+`demo.py` contains the majority of the code and selectable parameters which we'll discuss in mode detail below.
 
 
 ## Paper
