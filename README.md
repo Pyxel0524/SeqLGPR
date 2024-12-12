@@ -10,7 +10,7 @@ Running this code requires a copy of the GROUNDED dataset (Ort T, Gilitschenski 
 
 # Usage
 
-`demo.py` contains the majority of the code and selectable parameters which we'll discuss in mode detail below.
+`demo.py` contains the majority of the code and selectable parameters.
 
 
 ## Paper
